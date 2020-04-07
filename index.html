@@ -1,31 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JS DOM example</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset=utf-8 />
+  <title>Calculator</title>
 </head>
 
 <body>
-  <h1 id="title">Javascript Demonstration Page</h1>
 
-  <div id="main">
-    <p>Hello World :)<p>
-  </div>
+  <label>Half this number...
+    <input type="number" id="half-input">
+  </label>
+  <button id="half-button">Calculate</button>
+  <br><br>
 
-  <hr>
-
-  <input id="myInput" type="text">
-  <!--   make sure this matches the name of the function you write in JS-->
-  <button id="executeButton">Run some Javascript...</button>
-
-  <div id="outputContainer">
-    <p id="outputText">Nothing yet...</p>
-  </div>
+  <label>Give me your name and I'll give you a fortune...
+    <input id="fortune-input">
+  </label>
+  <button id="fortune-button">Get Fortune</button>
+  <br><br>
+  <div id="fortune-output"></div>
 
   <script src="script.js"></script>
 </body>
-
 </html>
